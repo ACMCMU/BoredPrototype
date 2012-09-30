@@ -19,6 +19,7 @@ gem 'paperclip', '~>2.4'
 gem "omniauth", '~>1.1.0'
 #gem "oa-pubcookie", :git => 'git://github.com/alexcrichton/oa-pubcookie.git'
 gem "oa-pubcookie", "~> 0.1.0"
+gem "google-api-client"
 
 # Deploy with to Heroku for testing
 # Use postgres for database as Heroku doesn't support sqlite3
@@ -33,11 +34,12 @@ group :development do
 end
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+# gem 'ruby-debug19', :require => 'ruby-debug'rails
 
 group :test do
   # Pretty printed test output
   gem 'shoulda'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails', "~> 3.0"
+  gem 'debugger'
 end
