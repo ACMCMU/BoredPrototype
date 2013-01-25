@@ -5,10 +5,13 @@
 $animation_length: 0.5s;
 $info_column_width: 300px;
 $header_height: 500px;
+$color: #00ade8;
+$dark_color: #0087b5;
+$pale_color: #02729b;
+
 
 html { 
     height: 100%; 
-    /*min-width: 1200px;*/
 }
 
 body {
@@ -23,6 +26,9 @@ body {
   line-height: 1em;
 }
 
+
+
+
 hr{
 	border-style: dashed;
 	border-color: #777;
@@ -33,26 +39,18 @@ form{
 	width: 800px;
 }
 
-.pageText{
-	width: 800px;
-	margin: 0 auto;
-	margin-bottom: 50px;
-
+h2{
+	margin: 20px 0px 10px 0px;
+	font-size: 18px;
+	color: $dark_color;
 }
-	.pageText h2{
-		margin: 20px 0px 0px 0px;
-		font-size: 18px;
-		color: #8C0F2E;
-	}
 
-.paragraphtext {
+p {
 	 margin:20px auto 0px auto; 
 	 line-height: 150%; 
 	 letter-spacing: 1px;
 	 padding-bottom: 5px;
 	 	border-style: dashed;
-	border-color: #777;
-	border-width: 0px 0px 1px 0px;
 }
 
 .header {
@@ -161,7 +159,7 @@ form{
 
 
 .container {
-	margin: 0 auto 0 auto;
+	margin: 0 auto 25px auto;
 	width: 90%;
 	
 	min-height: 80%;

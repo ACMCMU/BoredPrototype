@@ -2,8 +2,8 @@
 	<h1>My Events</h1>
 	<ul id="user-events">
 	<% @organizationsEvents.each do |organization| %>
-		<li><h2><%= organization.name %></h2>
-			<% if !organization.events.nil? %>
+		<li><br /><h2><%= organization.name %></h2>
+			<% if !organization.events.blank? %>
 
 			<div class="events-col-info">
 			  <h2>&larr; Click an event to see details</h2>
@@ -23,9 +23,12 @@
 				<% organization.events.each do |event| %>
 				<div id="event"><%= render event  %></div>
 				<% end %>
-				</div>
-			<% end %>
+				</div> 		
+			<% else %>
+			 <p> This organization has no events</p>
+			<% end %>	
 		</li>
-	<% end %>
+
+	<% end %> 
 	</ul>
-</div>
+</div><br /><br />

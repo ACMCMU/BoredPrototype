@@ -1,12 +1,17 @@
+$color:	#00ade8;
+$dark_color: #0087b5;
+$pale_color: #02729b;
+
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px; }
 
 a {
-  color: #000;
+  text-decoration:none;
+  color: $pale_color;
   &:visited {
-    color: #666; } }
+    color: $pale_color; } }
 
 div {
   &.field, &.actions {
